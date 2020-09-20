@@ -1,0 +1,7 @@
+{
+  "name": "ford-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
