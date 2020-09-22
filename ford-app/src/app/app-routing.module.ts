@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'main',
     loadChildren: () => import('./main/main.module').then(m => m.MainPageModule)
   },
+  {
+    path: 'maps',
+    loadChildren: () => import('./maps/maps.module').then( m => m.MapsPageModule)
+  },
 ];
 
 @NgModule({

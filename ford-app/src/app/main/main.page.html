@@ -1,15 +1,12 @@
 <ion-header>
     <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-back-button></ion-back-button>
-      </ion-buttons>
       <ion-title>Ford App</ion-title>
     </ion-toolbar>
   </ion-header>
 
+<ion-content class="app-item">
 <ion-avatar class="item-avatar">
     <img src="https://criadoresid.com/wp-content/uploads/2019/01/Criador_Everson-Zoio_youtuber_criadoresid-4.jpg">
-
 </ion-avatar>
 <ion-label color="primary">
     Everson Zoio
@@ -18,10 +15,10 @@
         <ion-icon name="star"></ion-icon>
         Nível 51
 </ion-label>
- 
+</ion-content>
 
 <ion-content>
-  <ion-grid>
+  <ion-grid class="lo">
       <ion-row>
           <ion-col>
               <ion-button class="ion-button">
@@ -29,7 +26,7 @@
             </ion-button>
           </ion-col>
           <ion-col>
-              <ion-button class="ion-button">
+              <ion-button [routerLink] = "['/maps']" class="ion-button">
                 <ion-icon name="navigate-outline"></ion-icon>
               </ion-button>
           </ion-col>
@@ -56,22 +53,22 @@
             </ion-button>
         </ion-col>
       </ion-row>
+      <ion-row>
+        <ion-col>
+            <ion-button class="ion-button">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button class="ion-button">
+              <ion-icon name="cog-outline"></ion-icon>
+            </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button class="ion-button">
+              <ion-icon name="exit-outline"></ion-icon>
+            </ion-button>
+        </ion-col>
+    </ion-row>
   </ion-grid>
-  <ion-row>
-    <ion-col>
-        <ion-button class="ion-button">
-          <ion-icon name="chatbubble-outline"></ion-icon>
-      </ion-button>
-    </ion-col>
-    <ion-col>
-        <ion-button class="ion-button">
-          <ion-icon name="cog-outline"></ion-icon>
-        </ion-button>
-    </ion-col>
-    <ion-col>
-        <ion-button class="ion-button">
-          <ion-icon name="exit-outline"></ion-icon>
-        </ion-button>
-    </ion-col>
-</ion-row>
-</ion-content>
+</ion-content> 
