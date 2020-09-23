@@ -24,6 +24,11 @@ const routes: Routes = [
     path: 'maps',
     loadChildren: () => import('./maps/maps.module').then( m => m.MapsPageModule)
   },
+  {
+    path: 'shape',
+    loadChildren: () => import('./shape/shape.module').then( m => m.ShapePageModule)
+  },
+
 ];
 
 @NgModule({
