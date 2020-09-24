@@ -4,9 +4,9 @@
     </ion-toolbar>
   </ion-header>
 
-<ion-content class="app-item">
+<ion-content [routerLink] = "['/profile']" class="app-item">
   <div style="padding-left: 7rem; padding-top: 2rem;">
-<ion-avatar class="item-avatar">
+<ion-avatar button class="item-avatar">
     <img src="https://criadoresid.com/wp-content/uploads/2019/01/Criador_Everson-Zoio_youtuber_criadoresid-4.jpg">
 </ion-avatar>
 <ion-label color="primary">
@@ -23,7 +23,7 @@
   <ion-grid class="lo">
       <ion-row>
           <ion-col>
-              <ion-button class="ion-button">
+              <ion-button [routerLink] = "['/shop']" class="ion-button">
                 <ion-icon name="cart-outline"></ion-icon>
             </ion-button>
           </ion-col>
@@ -33,14 +33,14 @@
               </ion-button>
           </ion-col>
           <ion-col>
-              <ion-button class="ion-button">
+              <ion-button [routerLink] = "['/car']" class="ion-button">
                 <ion-icon name="car-outline"></ion-icon>
               </ion-button>
           </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-            <ion-button class="ion-button">
+            <ion-button [routerLink]= "['/gamefic']" class="ion-button">
               <ion-icon name="game-controller-outline"></ion-icon>
           </ion-button>
         </ion-col>
@@ -62,7 +62,7 @@
           </ion-button>
         </ion-col>
         <ion-col>
-            <ion-button class="ion-button">
+            <ion-button [routerLink] = "['/shape']" class="ion-button">
               <ion-icon name="cog-outline"></ion-icon>
             </ion-button>
         </ion-col>

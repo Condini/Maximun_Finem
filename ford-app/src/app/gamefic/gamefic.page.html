@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Car</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+      <ion-list>
+        <ion-list-header>
+          Recent Conversations
+        </ion-list-header>
+
+        <ion-item [routerLink] = "['/missions']" button>
+          <ion-avatar slot="start">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+          </ion-avatar>
+          <ion-label>
+            <h2>My Missions</h2>
+          </ion-label>
+        </ion-item>
+
+        <ion-item [routerLink] = "['/daily']" button>
+          <ion-avatar slot="start">
+            <ion-icon name="today-outline"></ion-icon>
+          </ion-avatar>
+          <ion-label>
+            <h2>Daily Tasks</h2>
+          </ion-label>
+        </ion-item>
+
+        <ion-item [routerLink] = "['/fordpass']" button>
+          <ion-avatar slot="start">
+            <img src="https://img.icons8.com/color/2x/ford.png">
+          </ion-avatar>
+          <ion-label>
+            <h2>FordPass</h2>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      
+    </ion-content>

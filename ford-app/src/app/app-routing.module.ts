@@ -28,6 +28,34 @@ const routes: Routes = [
     path: 'shape',
     loadChildren: () => import('./shape/shape.module').then( m => m.ShapePageModule)
   },
+  {
+    path: 'gamefic',
+    loadChildren: () => import('./gamefic/gamefic.module').then( m => m.GameficPageModule)
+  },
+  {
+    path: 'missions',
+    loadChildren: () => import('./missions/missions.module').then( m => m.MissionsPageModule)
+  },
+  {
+    path: 'car',
+    loadChildren: () => import('./car/car.module').then( m => m.CarPageModule)
+  },
+  {
+    path: 'daily',
+    loadChildren: () => import('./daily/daily.module').then( m => m.DailyPageModule)
+  },
+  {
+    path: 'fordpass',
+    loadChildren: () => import('./fordpass/fordpass.module').then( m => m.FordpassPageModule)
+  },
+  {
+    path: 'shop',
+    loadChildren: () => import('./shop/shop.module').then( m => m.ShopPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 
 ];
 
