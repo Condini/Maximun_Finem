@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-      <ion-title>Ford App</ion-title>
+      <ion-title>Main</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -45,19 +45,19 @@
           </ion-button>
         </ion-col>
         <ion-col>
-            <ion-button class="ion-button">
+            <ion-button [routerLink] = "['/statistics']" class="ion-button">
               <ion-icon name="stats-chart-outline"></ion-icon>
             </ion-button>
         </ion-col>
         <ion-col>
-            <ion-button class="ion-button">
+            <ion-button [routerLink] = "['/news']" class="ion-button">
               <ion-icon name="newspaper-outline"></ion-icon>
             </ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-            <ion-button class="ion-button">
+            <ion-button [routerLink] = "['/chat']" class="ion-button">
               <ion-icon name="chatbubble-outline"></ion-icon>
           </ion-button>
         </ion-col>
