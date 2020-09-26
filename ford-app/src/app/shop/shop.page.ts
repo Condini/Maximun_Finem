@@ -10,6 +10,13 @@ export class ShopPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+  } 
 
+  listaCarros = ['Ford-Ka', 'Ford Fiesta', 'Ford Sedan'];
+
+
+  habilita: Boolean;
+  habilitaItens() {
+    this.habilita == true;
+  }
 }
