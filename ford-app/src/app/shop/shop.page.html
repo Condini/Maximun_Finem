@@ -11,7 +11,9 @@
   <ion-select placeholder="Selecione o modelo" style="height: 10%;" (ionChange)="habilitaItens()">
     <ion-select-option *ngFor="let carro of listaCarros">{{ carro }}</ion-select-option>
   </ion-select>
-  <ion-item *ngIf="habilita == true" style="top: 3rem;">teste
-    <ion-label>teste 123</ion-label>
+  <ion-item *ngIf="habilita == true" style="top: 1rem;">
+    <ion-label style="color: rgb(253, 253, 253);">
+      <p style="color: black;">Kit de pneus</p>
+    </ion-label>
   </ion-item>
 </ion-content>

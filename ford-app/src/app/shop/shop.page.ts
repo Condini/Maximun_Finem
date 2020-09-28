@@ -17,6 +17,6 @@ export class ShopPage implements OnInit {
 
   habilita: Boolean;
   habilitaItens() {
-    this.habilita == true;
+    this.habilita = true;
   }
 }
