@@ -35,10 +35,13 @@ ion-toolbar {
 
 ion-select {
     color: #545ca7;
-  
     --placeholder-color: rgb(100, 99, 99);
-  
     --placeholder-opacity: 1;
-
     background-color: honeydew;
+  }
+
+
+  ion-toast.cssDoToast {
+    --height: 70px;
+    font-size: 20px!important;
   }
