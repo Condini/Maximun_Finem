@@ -12,4 +12,8 @@ export class MissionsPage implements OnInit {
   ngOnInit() {
   }
 
+  habilita: Boolean;
+  habilitaItens() {
+    this.habilita = true;
+  }
 }

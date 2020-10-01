@@ -25,6 +25,16 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+ion-item {
+    --background: rgb(24, 24, 24);
+    --color: #545ca7;
+}
+
+ion-list-header {
+    --background: rgb(24, 24, 24);
+    --color: #545ca7;
+}
+
 ion-content {
     --background: rgb(24, 24, 24);
 }
@@ -44,4 +54,8 @@ ion-select {
   ion-toast.cssDoToast {
     --height: 70px;
     font-size: 20px!important;
+  }
+
+  html * {
+    font-family: 'Roboto', sans-serif;
   }
