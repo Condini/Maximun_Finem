@@ -1,0 +1,56 @@
+.item-avatar  {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;  
+    width:100% !important;  
+    height : 100% !important;  
+    max-width: 115px !important;  //any size
+    max-height: 115px !important; //any size 
+    --border-radius: 50%;
+    background-color:#747474;
+    }
+
+
+.progressBar {
+    width: 60%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    --progress-background: gold;
+}
+
+.progressBarObjective {
+    width: 60%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    --progress-background: rgb(16, 165, 16);
+}
+
+.text1-progress-bar {
+    color: gold;
+    font-size: 11px;
+    float: right;
+    margin-top: -0.5rem;
+    margin-right: 1rem;
+}
+
+.text2-progress-bar {
+    color: rgb(16, 165, 16);
+    font-size: 11px;
+    float: right;
+    margin-top: -0.5rem;
+    margin-right: 1rem;
+}
+
+.icon-estrela-progress-bar {
+    color: gold;
+    float: left;
+    margin-top: -0.6rem;
+    margin-left: 1.5rem;
+}
+
+.icon-objective-progress-bar {
+    color: rgb(16, 165, 16);
+    float: left;
+    margin-top: -0.6rem;
+    margin-left: 1.5rem;
+}
