@@ -25,6 +25,10 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+ion-back-button{
+  color: black;
+}
+
 ion-item {
     --background: rgb(24, 24, 24);
     --color: #545ca7;
@@ -40,7 +44,7 @@ ion-content {
 }
 
 ion-toolbar {
-    --background: rgb(56, 128, 255);
+    --background: rgb(56, 40, 255);
 }
 
 ion-select {
