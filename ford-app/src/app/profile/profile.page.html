@@ -35,5 +35,7 @@
     <ion-icon class="icon-objective-progress-bar" name="checkmark-circle-outline"></ion-icon>
     <ion-label class="text2-progress-bar">38/100 OBJ</ion-label>
 
-
+    <ion-select placeholder="Seus veículos" style="height: auto; margin: 1rem; margin-top: 5rem;">
+      <ion-select-option *ngFor="let carro of listaCarros">{{ carro }}</ion-select-option>
+    </ion-select>
 </ion-content>

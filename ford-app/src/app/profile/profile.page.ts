@@ -12,4 +12,6 @@ export class ProfilePage implements OnInit {
   ngOnInit() {
   }
 
+
+  listaCarros = ['Ford-Ka', 'Ford Fiesta', 'Ford Sedan'];
 }
