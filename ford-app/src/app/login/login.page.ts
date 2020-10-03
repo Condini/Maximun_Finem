@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router"
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginPage implements OnInit {
   url = "http://localhost:4000/api/";
   validUser;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router, private alertController: AlertController) { }
   
   ngOnInit() {
   }
@@ -29,7 +30,7 @@ export class LoginPage implements OnInit {
 
       }
       else{
-        alert("Usuário Inválido!")
+        this.presentAlert();
       }
     },
     error: error => console.error('There was an error!', error)
@@ -37,4 +38,17 @@ export class LoginPage implements OnInit {
 
 
   }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'Usuário Inválido!',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+  
 }
+
+
