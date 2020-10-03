@@ -11,28 +11,37 @@
   <img style="height: auto;" src="https://www.hrkatha.com/wp-content/uploads/Ford-logo-2003-1366x768.png">
   <form style="margin: auto;" class="formCentralization">
     <ion-item lines="full">
-      <ion-label position="floating">Nome</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="floating">Nome Completo</ion-label>
+      <ion-input #name type="text" required></ion-input>
     </ion-item>
 
     <ion-item lines="full">
-      <ion-label position="floating">Sobrenome</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input #cpf type="text" required></ion-input>
     </ion-item>
 
     <ion-item lines="full">
       <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input #email type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Código do Carro</ion-label>
+      <ion-input #regis type="text" required></ion-input>
     </ion-item>
 
     <ion-item lines="full">
       <ion-label position="floating">Senha</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-input #password type="password" required></ion-input>
     </ion-item>
 
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="danger" expand="block">Sign Up</ion-button>
+        <ion-button (click)="onSubmit({name:name.value,
+           cpf:cpf.value,
+           regis:regis.value,
+           password:password.value,
+           email:email.value})" type="submit" color="danger" expand="block">Sign Up</ion-button>
       </ion-col>
     </ion-row>
   </form>

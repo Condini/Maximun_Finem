@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router"
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +10,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  url = "http://localhost:4000/api/";
+  validUser;
 
+  constructor(private http: HttpClient, private router: Router, private alertController: AlertController) { }
+  
   ngOnInit() {
   }
+  onSubmit(data){
+    console.log(data);
+    this.http.post(this.url+'signin',{
+        email: data.email,
+        password:   data.password
+    }).subscribe({
+    next: res => {this.validUser = res;
+      console.log(this.validUser);
+      if(this.validUser.valid){
+        this.router.navigate(['/main'])
 
+      }
+      else{
+        this.presentAlert();
+      }
+    },
+    error: error => console.error('There was an error!', error)
+    })
+
+
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'Usuário Inválido!',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+  
 }
+
+
