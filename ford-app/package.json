@@ -33,6 +33,7 @@
     "bootstrap": "^4.5.2",
     "cordova-plugin-geolocation": "^4.0.2",
     "mongoose": "^5.10.7",
+    "node-sass": "^4.14.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
