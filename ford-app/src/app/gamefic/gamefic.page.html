@@ -9,12 +9,10 @@
 
 <ion-content>
       <ion-list>
-        <ion-list-header>
-          Recent Conversations
-        </ion-list-header>
+
         <ion-item [routerLink] = "['/missions']" button>
           <ion-avatar slot="start">
-            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <ion-icon style="width: 100%; height: 80%; margin-top: 0.1rem; color: green;" name="checkmark-circle-outline"></ion-icon>
           </ion-avatar>
           <ion-label>
             <h2>Objetivos (My Missions)</h2>
@@ -23,7 +21,7 @@
 
         <ion-item [routerLink] = "['/daily']" button>
           <ion-avatar slot="start">
-            <ion-icon name="today-outline"></ion-icon>
+            <ion-icon style="width: 100%; height: 80%; margin-top: 0.1rem; color: gold;" name="ribbon"></ion-icon>
           </ion-avatar>
           <ion-label>
             <h2>Recompensas (Daily Tasks)</h2>
