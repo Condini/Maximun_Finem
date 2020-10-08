@@ -8,5 +8,66 @@
 </ion-header>
 
 <ion-content>
+  <ion-select placeholder="Seus veículos" style="height: auto; margin: 1rem; margin-top: 5rem;">
+    <ion-select-option *ngFor="let carro of listaCarros">{{ carro }}</ion-select-option>
+  </ion-select>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
+      <ion-card-title>Game of Thrones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
+      <ion-card-title>Game of Thrones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #hrzBarChart></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
+      <ion-card-title>Game of Thrones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #hrzBarChart3></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
+      <ion-card-title>Game of Thrones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart2></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Nível de Água <ion-icon name="water"></ion-icon></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-progress-bar value="0.5"></ion-progress-bar>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Nível de gasolina <ion-icon name="speedometer"></ion-icon></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-progress-bar value="0.2"></ion-progress-bar>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
