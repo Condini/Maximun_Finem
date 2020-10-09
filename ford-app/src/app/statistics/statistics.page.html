@@ -8,49 +8,6 @@
 </ion-header>
 
 <ion-content>
-  <ion-select placeholder="Seus veículos" style="height: auto; margin: 1rem; margin-top: 5rem;">
-    <ion-select-option *ngFor="let carro of listaCarros">{{ carro }}</ion-select-option>
-  </ion-select>
-
-  <ion-card class="welcome-card">
-    <ion-card-header>
-      <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
-      <ion-card-title>Game of Thrones</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <canvas #barChart></canvas>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card class="welcome-card">
-    <ion-card-header>
-      <ion-card-subtitle>Consumo de por Mês de</ion-card-subtitle>
-      <ion-card-title>Gasolina</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <canvas #hrzBarChart></canvas>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card class="welcome-card">
-    <ion-card-header>
-      <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
-      <ion-card-title>Game of Thrones</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <canvas #hrzBarChart3></canvas>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card class="welcome-card">
-    <ion-card-header>
-      <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
-      <ion-card-title>Game of Thrones</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <canvas #barChart2></canvas>
-    </ion-card-content>
-  </ion-card>
 
   <ion-card class="welcome-card">
     <ion-card-header>
@@ -69,5 +26,116 @@
       <ion-progress-bar value="0.2"></ion-progress-bar>
     </ion-card-content>
   </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Status dos Pneus 
+        <ion-icon src="https://www.flaticon.com/svg/static/icons/svg/810/810036.svg">
+      </ion-icon>
+    </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-card-subtitle>
+        Pneus Dianteiros
+      </ion-card-subtitle>
+      
+      <ion-list>
+
+        <ion-item>
+        <ion-note slot="end" color="secondary">
+          <ion-icon name="ellipse"></ion-icon>
+        </ion-note>
+        <ion-label>Direito</ion-label>
+        </ion-item>
+        <ion-label>
+          30 PSI
+        </ion-label>
+
+        <ion-item>
+        <ion-note slot="end" color="warning">
+          <ion-icon name="ellipse"></ion-icon>
+        </ion-note>
+        <ion-label>Esquerdo</ion-label>
+        </ion-item>
+        <ion-label>
+          30 PSI
+        </ion-label>
+
+      </ion-list>
+
+
+      <ion-card-subtitle>
+        Pneus Traseiros
+      </ion-card-subtitle>
+
+      <ion-list>
+
+        <ion-item>
+        <ion-note slot="end" color="danger">
+          <ion-icon name="ellipse"></ion-icon>
+        </ion-note>
+        <ion-label>Direito</ion-label>
+        </ion-item>
+        <ion-label>
+          30 PSI
+        </ion-label>
+
+        <ion-item>
+        <ion-note slot="end" color="secondary">
+          <ion-icon name="ellipse"></ion-icon>
+        </ion-note>
+        <ion-label>Esquerdo</ion-label>
+        </ion-item>
+        <ion-label>
+          30 PSI
+        </ion-label>
+      
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle>
+      <ion-card-title>Game of Thrones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Consumo por Mês de</ion-card-subtitle>
+      <ion-card-title>Gasolina</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #hrzBarChart></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Média diária de</ion-card-subtitle>
+      <ion-card-title>Temperatura do Motor</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #hrzBarChart3></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>Consumo médio semanal de</ion-card-subtitle>
+      <ion-card-title>Quilometro por Litro</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart2></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  
 
 </ion-content>
