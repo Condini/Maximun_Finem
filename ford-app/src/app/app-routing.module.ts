@@ -67,7 +67,11 @@ const routes: Routes = [
   {
     path: 'chat',
     loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },  {
+    path: 'missions-daily',
+    loadChildren: () => import('./missions-daily/missions-daily.module').then( m => m.MissionsDailyPageModule)
   },
+
 
 ];
 
