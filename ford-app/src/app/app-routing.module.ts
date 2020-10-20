@@ -71,6 +71,14 @@ const routes: Routes = [
     path: 'missions-daily',
     loadChildren: () => import('./missions-daily/missions-daily.module').then( m => m.MissionsDailyPageModule)
   },
+  {
+    path: 'shop-list',
+    loadChildren: () => import('./shop-list/shop-list.module').then( m => m.ShopListPageModule)
+  },
+  {
+    path: 'ford-shop',
+    loadChildren: () => import('./ford-shop/ford-shop.module').then( m => m.FordShopPageModule)
+  },
 
 
 ];

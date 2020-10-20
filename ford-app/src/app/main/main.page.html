@@ -24,52 +24,79 @@
   <ion-grid class="lo" style="text-align: -webkit-center;">
       <ion-row>
           <ion-col>
-              <ion-button [routerLink] = "['/shop']" class="ion-button">
+              <ion-button [routerLink] = "['/shop-list']" class="ion-button">
+                <ion-label>
                 <ion-icon name="cart-outline"></ion-icon>
+                <h2>Loja</h2>
+                </ion-label>
             </ion-button>
           </ion-col>
           <ion-col>
               <ion-button [routerLink] = "['/maps']" class="ion-button">
+                <ion-label>
                 <ion-icon name="navigate-outline"></ion-icon>
+                <h2>Track</h2>
+              </ion-label>
               </ion-button>
           </ion-col>
           <ion-col>
               <ion-button [routerLink] = "['/car']" class="ion-button">
+                <ion-label>
                 <ion-icon name="car-outline"></ion-icon>
+                <h2>Car</h2>
+              </ion-label>
               </ion-button>
           </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
             <ion-button [routerLink]= "['/gamefic']" class="ion-button">
+              <ion-label>
               <ion-icon name="game-controller-outline"></ion-icon>
+              <h2>Gamefic</h2>
+            </ion-label>
           </ion-button>
         </ion-col>
         <ion-col>
             <ion-button [routerLink] = "['/statistics']" class="ion-button">
+              <ion-label>
               <ion-icon name="stats-chart-outline"></ion-icon>
+              <h2>Statistics</h2>
+            </ion-label>
             </ion-button>
         </ion-col>
         <ion-col>
             <ion-button [routerLink] = "['/news']" class="ion-button">
+              <ion-label>
               <ion-icon name="newspaper-outline"></ion-icon>
+              <h2>News</h2>
+            </ion-label>
             </ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
             <ion-button [routerLink] = "['/chat']" class="ion-button">
+              <ion-label>
               <ion-icon name="chatbubble-outline"></ion-icon>
+              <h2>Chat</h2>
+            </ion-label>
           </ion-button>
         </ion-col>
         <ion-col>
             <ion-button [routerLink] = "['/shape']" class="ion-button">
+              <ion-label>
               <ion-icon name="cog-outline"></ion-icon>
+              <h2>Config</h2>
+            </ion-label>
             </ion-button>
         </ion-col>
         <ion-col>
             <ion-button (click)="presentAlert()" class="ion-button">
+              <ion-label>
               <ion-icon name="exit-outline"></ion-icon>
+              <h2>Exit</h2>
+            </ion-label>
             </ion-button>
         </ion-col>
     </ion-row>
