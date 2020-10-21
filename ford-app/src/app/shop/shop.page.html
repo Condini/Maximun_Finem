@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-select placeholder="Selecione o modelo" style="height: 10%;" (ionChange)="habilitaItens()">
+  <ion-select placeholder="Selecione o modelo" style="height: 8%; border: black; border-style: ridge;" (ionChange)="habilitaItens()">
     <ion-select-option *ngFor="let carro of listaCarros">{{ carro }}</ion-select-option>
   </ion-select>
   <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
@@ -47,7 +47,11 @@
     <ion-label>Vidro blindado</ion-label>
     <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
   </ion-item>
-  <section *ngIf="habilita == true" style="padding-top: 20%; padding-left: 1.5%; background-color: inherit;">
+  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
+    <ion-label>1L de Gasolina</ion-label>
+    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  </ion-item>
+  <section *ngIf="habilita == true" style="padding-top: 10%; padding-left: 1.5%; background-color: inherit;">
     <ion-button class="botaoParaCheckbox" size="large" slot="end" color="medium">Cancelar</ion-button>
     <ion-button class="botaoParaCheckbox" size="large" slot="end" color="medium" (click)="presentAlert()">Comprar</ion-button>
   </section>
