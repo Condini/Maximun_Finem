@@ -79,6 +79,10 @@ const routes: Routes = [
     path: 'ford-shop',
     loadChildren: () => import('./ford-shop/ford-shop.module').then( m => m.FordShopPageModule)
   },
+  {
+    path: 'tiers',
+    loadChildren: () => import('./tiers/tiers.module').then( m => m.TiersPageModule)
+  },
 
 
 ];

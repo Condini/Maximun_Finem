@@ -9,17 +9,28 @@
 
 <ion-content>
   <div style="text-align: -webkit-center; margin-top: 4rem;">
+    <img class="border" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c0/Level_50_Summoner_Icon_Border.png/revision/latest?cb=20180324105839">
     <ion-avatar class="item-avatar">
         <img src="https://criadoresid.com/wp-content/uploads/2019/01/Criador_Everson-Zoio_youtuber_criadoresid-4.jpg">
     </ion-avatar>
     <ion-label color="primary" style="font-size: 20px;">
         Everson Zoio
         </ion-label>
+        <br>
     <ion-label style="font-size: 20px;" color="secondary" >
             <ion-icon style="color: gold;" name="star"></ion-icon>
             Nível 51
     </ion-label>
+    <br>
+    <br>
+    <ion-label style="font-size: 20px; color: rgb(202, 81, 81); font-weight: bold; " >
+      Ford Vindicator
+      <br>
+      <img [routerLink] = "['/tiers']" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/a/a3/Season_2019_-_Platinum_2.png/revision/latest/scale-to-width-down/130?cb=20181229234933">
+    </ion-label>
     </div>
+    <br>
+    <br>
     <div style="text-align: -webkit-center; margin-top: 0.5rem;">
       <ion-label color="primary" style="font-size: 20px;">
         <ion-icon style="color: green;" name="cash"></ion-icon>
@@ -35,7 +46,5 @@
     <ion-icon class="icon-objective-progress-bar" name="checkmark-circle-outline"></ion-icon>
     <ion-label class="text2-progress-bar">38/100 OBJ</ion-label>
 
-    <ion-select placeholder="Seus veículos" style="height: auto; margin: 1rem; margin-top: 5rem;">
-      <ion-select-option *ngFor="let carro of listaCarros">{{ carro }}</ion-select-option>
-    </ion-select>
+   
 </ion-content>

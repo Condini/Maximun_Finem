@@ -1,7 +1,7 @@
 .item-avatar  {
     margin-top: 1rem;
     margin-left: 1rem;
-    margin-bottom: 1rem;  
+    margin-bottom: 3rem;  
     width:100% !important;  
     height : 100% !important;  
     max-width: 115px !important;  //any size
@@ -53,4 +53,15 @@
     float: left;
     margin-top: -0.6rem;
     margin-left: 1.5rem;
+}
+
+.border {
+    position: absolute;
+    right:5.6rem;
+    top: 0.9rem;
+    width:100% !important;  
+    height : 100% !important;  
+    max-width: 215px !important;  //any size
+    max-height: 215px !important; //any size 
+
 }
