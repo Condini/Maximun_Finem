@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
-import { MbscFormOptions, MbscListviewOptions }  from '@mobiscroll/angular';
+
 
 @Component({
   selector: 'app-statistics',
@@ -13,7 +13,6 @@ export class StatisticsPage implements OnInit {
   @ViewChild('barChart2') barChart2;
   @ViewChild('hrzBarChart') hrzBarChart;
   @ViewChild('hrzBarChart3') hrzBarChart3;
-  @ViewChild('adeline') adeline;
 
   bars: any;
   bars2: any;
