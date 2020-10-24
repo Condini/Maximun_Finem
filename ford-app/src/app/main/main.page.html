@@ -1,111 +1,114 @@
 <ion-header>
-    <ion-toolbar style="display: block;">
-      <ion-title>Main</ion-title>
-      <img style="height: 38px; float: right;" src="https://www.hrkatha.com/wp-content/uploads/Ford-logo-2003-1366x768.png">
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar style="display: block;">
+    <ion-title>Main</ion-title>
+    <img style="height: 38px; float: right;"
+      src="https://www.hrkatha.com/wp-content/uploads/Ford-logo-2003-1366x768.png">
+  </ion-toolbar>
+</ion-header>
 
-<ion-content [routerLink] = "['/profile']" class="app-item">
-  <img class="border" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c0/Level_50_Summoner_Icon_Border.png/revision/latest?cb=20180324105839">
-<div style="text-align: -webkit-center; margin-top: 4rem;">
-<ion-avatar class="item-avatar">
-    <img src="https://criadoresid.com/wp-content/uploads/2019/01/Criador_Everson-Zoio_youtuber_criadoresid-4.jpg">
-</ion-avatar>
-<br>
-<br>
-<ion-label color="primary" style="font-size: 20px;">
-    Everson Zoio
-    </ion-label>
-<ion-label style="font-size: 20px;" color="secondary" >
+<ion-content [routerLink]="['/profile']" class="app-item">
+  <!-- <img class="border" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/c/c0/Level_50_Summoner_Icon_Border.png/revision/latest?cb=20180324105839"> -->
+  <div style="text-align: -webkit-left; margin-top: 4rem;">
+    <ion-avatar class="item-avatar">
+      <img src="https://criadoresid.com/wp-content/uploads/2019/01/Criador_Everson-Zoio_youtuber_criadoresid-4.jpg">
+    </ion-avatar>
+    <div style="margin-left: 10rem; margin-top: -7rem;">
+      <ion-label color="primary" style="font-size: 20px;">
+        Everson Zoio
+      </ion-label>
+      <br>
+      <ion-label style="font-size: 20px;" color="secondary">
         <ion-icon style="color: gold;" name="star"></ion-icon>
         Nível 51
-</ion-label>
-
-<br>
-
-</div>
+      </ion-label>
+      <br>
+      <ion-label style="font-size: 20px;" color="secondary">
+        <ion-icon style="color: green;" name="cash"></ion-icon>
+        500 FCoins
+      </ion-label>
+    </div>
+  </div>
 </ion-content>
 
 <ion-content>
   <ion-grid class="lo" style="text-align: -webkit-center;">
-      <ion-row>
-          <ion-col>
-              <ion-button [routerLink] = "['/shop-list']" class="ion-button">
-                <ion-label>
-                <ion-icon name="cart-outline"></ion-icon>
-                <h2>Loja</h2>
-                </ion-label>
-            </ion-button>
-          </ion-col>
-          <ion-col>
-              <ion-button [routerLink] = "['/maps']" class="ion-button">
-                <ion-label>
-                <ion-icon name="navigate-outline"></ion-icon>
-                <h2>Track</h2>
-              </ion-label>
-              </ion-button>
-          </ion-col>
-          <ion-col>
-              <ion-button [routerLink] = "['/car']" class="ion-button">
-                <ion-label>
-                <ion-icon name="car-outline"></ion-icon>
-                <h2>Car</h2>
-              </ion-label>
-              </ion-button>
-          </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-            <ion-button [routerLink]= "['/gamefic']" class="ion-button">
-              <ion-label>
-              <ion-icon name="game-controller-outline"></ion-icon>
-              <h2>Gamefic</h2>
-            </ion-label>
-          </ion-button>
-        </ion-col>
-        <ion-col>
-            <ion-button [routerLink] = "['/statistics']" class="ion-button">
-              <ion-label>
-              <ion-icon name="stats-chart-outline"></ion-icon>
-              <h2>Statistics</h2>
-            </ion-label>
-            </ion-button>
-        </ion-col>
-        <ion-col>
-            <ion-button [routerLink] = "['/news']" class="ion-button">
-              <ion-label>
-              <ion-icon name="newspaper-outline"></ion-icon>
-              <h2>News</h2>
-            </ion-label>
-            </ion-button>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-            <ion-button [routerLink] = "['/chat']" class="ion-button">
-              <ion-label>
-              <ion-icon name="chatbubble-outline"></ion-icon>
-              <h2>Chat</h2>
-            </ion-label>
-          </ion-button>
-        </ion-col>
-        <ion-col>
-            <ion-button [routerLink] = "['/shape']" class="ion-button">
-              <ion-label>
-              <ion-icon name="cog-outline"></ion-icon>
-              <h2>Config</h2>
-            </ion-label>
-            </ion-button>
-        </ion-col>
-        <ion-col>
-            <ion-button (click)="presentAlert()" class="ion-button">
-              <ion-label>
-              <ion-icon name="exit-outline"></ion-icon>
-              <h2>Exit</h2>
-            </ion-label>
-            </ion-button>
-        </ion-col>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/shop-list']" class="ion-button">
+          <ion-label>
+            <ion-icon name="cart-outline"></ion-icon>
+            <h2>Loja</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['/maps']" class="ion-button">
+          <ion-label>
+            <ion-icon name="navigate-outline"></ion-icon>
+            <h2>Track</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['/car']" class="ion-button">
+          <ion-label>
+            <ion-icon name="car-outline"></ion-icon>
+            <h2>Car</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/gamefic']" class="ion-button">
+          <ion-label>
+            <ion-icon name="game-controller-outline"></ion-icon>
+            <h2>Gamefic</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['/statistics']" class="ion-button">
+          <ion-label>
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <h2>Statistics</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['/news']" class="ion-button">
+          <ion-label>
+            <ion-icon name="newspaper-outline"></ion-icon>
+            <h2>News</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/chat']" class="ion-button">
+          <ion-label>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            <h2>Chat</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['/shape']" class="ion-button">
+          <ion-label>
+            <ion-icon name="cog-outline"></ion-icon>
+            <h2>Config</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="presentAlert()" class="ion-button">
+          <ion-label>
+            <ion-icon name="exit-outline"></ion-icon>
+            <h2>Exit</h2>
+          </ion-label>
+        </ion-button>
+      </ion-col>
     </ion-row>
   </ion-grid>
-</ion-content> 
-
+</ion-content>
