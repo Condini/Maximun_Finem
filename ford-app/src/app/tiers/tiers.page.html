@@ -9,24 +9,83 @@
 
 <ion-content>
 
-  <ion-list-header>Insignias</ion-list-header>
+  <ion-list-header>Insignias
+    <ion-button (click)="presentPopover()">
+      <ion-icon name="information-circle-outline"></ion-icon>
+    </ion-button>
+  </ion-list-header>
   <ion-card>
     <ion-card-subtitle>Level 1-10</ion-card-subtitle>
     <ion-card-title style="color: rgba(31, 172, 3, 0.788);">Rookie</ion-card-title>
       <img class="badge" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/7/70/Season_2019_-_Iron_4.png/revision/latest/scale-to-width-down/130?cb=20181229234928">
-  </ion-card>
+    </ion-card>
 
   <ion-card>
     <ion-card-subtitle>Level 11-25</ion-card-subtitle>
     <ion-card-title style="color: rgb(6, 135, 255);">Adept</ion-card-title>
       <img class="badge" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/0/03/Season_2019_-_Iron_1.png/revision/latest/scale-to-width-down/130?cb=20181229234926">
-  </ion-card>
+      <ion-card-title>Recompensas:</ion-card-title>
+    <ion-slides>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>100
+            <ion-icon style="color: green;" name="cash"></ion-icon>
+          </ion-card-title>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>100
+            <ion-icon style="color: gold;" name="star"></ion-icon>
+          </ion-card-title>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+    </ion-card>
 
   <ion-card>
     <ion-card-subtitle>Level 26-35</ion-card-subtitle>
     <ion-card-title style="color: rgb(19, 1, 182);">Soldier</ion-card-title>
       <img class="badge" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/5/5a/Season_2019_-_Bronze_4.png/revision/latest/scale-to-width-down/130?cb=20181229234913">
-  </ion-card>
+      <ion-card-title>Recompensas:</ion-card-title>
+    <ion-slides>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>200
+            <ion-icon style="color: green;" name="cash"></ion-icon>
+          </ion-card-title>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-subtitle style="color: gold;">FordPass</ion-card-subtitle>
+          <ion-card-title>+200
+            <ion-icon style="color: green;" name="cash"></ion-icon>
+          </ion-card-title>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-title>200
+            <ion-icon style="color: gold;" name="star"></ion-icon>
+          </ion-card-title>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-subtitle style="color: gold;">FordPass</ion-card-subtitle>
+            <ion-card-title>+200
+              <ion-icon style="color: gold;" name="star"></ion-icon>
+            </ion-card-title>
+          </ion-card>
+      
+      </ion-slide>
+
+    </ion-slides>
+    </ion-card>
 
   <ion-card>
     <ion-card-subtitle>Level 36-45</ion-card-subtitle>
