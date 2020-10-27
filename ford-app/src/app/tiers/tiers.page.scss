@@ -7,3 +7,18 @@
     max-width: 150px !important;  //any size
     max-height: 150px !important; //any size 
 }
+
+
+.border-card {
+    margin: 10px;
+    border-color: goldenrod;
+    border-style: groove;
+}
+
+.card-rewards {
+    margin: 1rem;
+    width: 300px;
+    border-color: rgba(0, 0, 255, 0.555);
+    border-style: groove;
+}
+
