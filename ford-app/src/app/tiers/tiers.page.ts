@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { HomePopoverComponent } from './home-popover/home-popover.component'
 
+
+
 @Component({
   selector: 'app-tiers',
   templateUrl: './tiers.page.html',
