@@ -12,6 +12,7 @@ export class LoginPage implements OnInit {
 
   url = "http://localhost:4000/api/";
   validUser;
+  User;
 
   constructor(private http: HttpClient, private router: Router, private alertController: AlertController) { }
   
@@ -26,6 +27,7 @@ export class LoginPage implements OnInit {
     next: res => {this.validUser = res;
       console.log(this.validUser);
       if(this.validUser.valid){
+        this.User = data.email;
         this.router.navigate(['/main'])
 
       }
@@ -39,6 +41,7 @@ export class LoginPage implements OnInit {
 
   }
 
+
   async presentAlert() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
@@ -48,7 +51,6 @@ export class LoginPage implements OnInit {
 
     await alert.present();
   }
-  
 }
 
 
