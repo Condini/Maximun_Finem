@@ -62,8 +62,8 @@ export class StatisticsPage implements OnInit {
       data: {
         labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
         datasets: [{
-          label: 'Viewers in millions',
-          data: [2.5, 3.8, 5, 6.9, 6.9, 7.5, 10, 17, 23, 30, 10, 12],
+          label: 'Horas',
+          data: [100, 246, 115, 156, 96.5, 72.5, 79, 125, 225, 195, 165, 125],
           backgroundColor: this.colorArray, // array should have same number of elements as number of dataset
           borderColor: 'rgb(38, 194, 129)',// array should have same number of elements as number of dataset
           borderWidth: 1
@@ -174,5 +174,5 @@ export class StatisticsPage implements OnInit {
   ngOnInit() {
   }
 
-  listaCarros = ['Ford-Ka', 'Ford Fiesta', 'Ford Sedan'];
+
 }
