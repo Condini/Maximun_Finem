@@ -8,51 +8,59 @@
 </ion-header>
 
 <ion-content>
-  <ion-select placeholder="Selecione o modelo" style="height: 8%; border: black; border-style: ridge;" (ionChange)="habilitaItens()">
-    <ion-select-option *ngFor="let carro of listaCarros">{{ carro }}</ion-select-option>
-  </ion-select>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label >Kit de pneus</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item>
+    <h3 style="color: floralwhite;">Escolha seus itens para compra:</h3>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>Protetor de volante</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+
+  <ion-item style="top: 0.1rem;">
+    <ion-label >Kit de pneus <div style="float: right;">R$ {{precoItem1}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item1" (ionChange)="alteraValorFinal()" color="primary" checked slot="start" checked="item1"></ion-checkbox>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>Perfume de carro</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Protetor de volante <div style="float: right;">R$ {{precoItem2}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item2" (ionChange)="alteraValorFinal2()" color="primary" checked slot="start" checked="item2"></ion-checkbox>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>Motor tunado</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Perfume de carro <div style="float: right;">R$ {{precoItem3}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item3" (ionChange)="alteraValorFinal3()" color="primary" checked slot="start" checked="item3"></ion-checkbox>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>Aros personalizados</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Motor tunado <div style="float: right;">R$ {{precoItem4}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item4" (ionChange)="alteraValorFinal4()" color="primary" checked slot="start" checked="item4"></ion-checkbox>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>Limpeza na concessionária</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Aros personalizados <div style="float: right;">R$ {{precoItem5}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item5" (ionChange)="alteraValorFinal5()" color="primary" checked slot="start" checked="item5"></ion-checkbox>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>Troca de óleo</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Limpeza na concessionária <div style="float: right;">R$ {{precoItem6}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item6" (ionChange)="alteraValorFinal6()" color="primary" checked slot="start" checked="item6"></ion-checkbox>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>Pneu blindado a furos</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Troca de óleo <div style="float: right;">R$ {{precoItem7}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item7" (ionChange)="alteraValorFinal7()" color="primary" checked slot="start" checked="item7"></ion-checkbox>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>Vidro blindado</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Pneu blindado a furos <div style="float: right;">R$ {{precoItem8}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item8" (ionChange)="alteraValorFinal8()" color="primary" checked slot="start" checked="item8"></ion-checkbox>
   </ion-item>
-  <ion-item *ngIf="habilita == true" style="top: 0.1rem;">
-    <ion-label>1L de Gasolina</ion-label>
-    <ion-checkbox color="primary" checked slot="start" checked="false"></ion-checkbox>
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Vidro blindado <div style="float: right;">R$ {{precoItem9}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item9" (ionChange)="alteraValorFinal9()" color="primary" checked slot="start" checked="item9"></ion-checkbox>
   </ion-item>
-  <section *ngIf="habilita == true" style="padding-top: 25%; padding-left: 1.5%; background-color: inherit;">
+  <ion-item style="top: 0.1rem;">
+    <ion-label>Tanque cheio de gasolina <div style="float: right;">R$ {{precoItem10}}</div></ion-label>
+    <ion-checkbox [(ngModel)]="item10" (ionChange)="alteraValorFinal10()" color="primary" checked slot="start" checked="item10"></ion-checkbox>
+  </ion-item>
+
+  <ion-item style="margin-top: 1rem;">
+    <h3>Valor final: R$ {{valorFinal}} </h3>
+  </ion-item>
+</ion-content>
+
+<ion-footer style="background-color: rgb(34, 34, 34);">
+  <section>
     <ion-button class="botaoParaCheckbox" size="large" slot="end" color="medium">Cancelar</ion-button>
     <ion-button class="botaoParaCheckbox" size="large" slot="end" color="medium" (click)="presentAlert()">Comprar</ion-button>
   </section>
-</ion-content>
+</ion-footer>
