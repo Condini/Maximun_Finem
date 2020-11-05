@@ -27,11 +27,20 @@
         500 FCoins
       </ion-label>
     </div>
+    <div style="margin-top: 4rem;">
+      <ion-progress-bar class="progressBar" value="0.7"></ion-progress-bar>
+      <ion-icon class="icon-estrela-progress-bar" name="star"></ion-icon>
+      <ion-label class="text1-progress-bar">700/1000 XP</ion-label>
+  <br>
+      <ion-progress-bar class="progressBarObjective" value="0.4"></ion-progress-bar>
+      <ion-icon class="icon-objective-progress-bar" name="checkmark-circle-outline"></ion-icon>
+      <ion-label class="text2-progress-bar">38/100 OBJ</ion-label>
+    </div>
   </div>
 </ion-content>
 
 <ion-content>
-  <ion-grid class="lo" style="text-align: -webkit-center;">
+  <ion-grid class="lo" style="text-align: -webkit-center; margin-top: 1.5rem;">
     <ion-row>
       <ion-col>
         <ion-button [routerLink]="['/shop-list']" class="ion-button">
